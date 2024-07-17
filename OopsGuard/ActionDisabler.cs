@@ -81,7 +81,7 @@ namespace OopsGuard
 
         unsafe private uint GetActionStatusDetour(IntPtr self, uint actionType, uint actionID, ulong a3, bool a4, bool a5, UIntPtr a6)
         {
-            if ((ActionType)actionType == ActionType.Action && ComboActions.Contains(actionID) && !ActionManager.MemberFunctionPointers.IsActionHighlighted(ActionManager.Instance(), (ActionType)actionType, actionID))
+            if ((ActionType)actionType == ActionType.Action && ComboActions.Contains(actionID) && !ActionManager.Instance()->IsActionHighlighted((ActionType)actionType, actionID))
             {
                 return DISABLED;
             }
