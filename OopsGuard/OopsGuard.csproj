@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="Dalamud.Plugin.Bootstrap.targets"/>
+
+  <PropertyGroup>
+    <Version>0.0.0.1</Version>
+    <Description>A sample plugin.</Description>
+    <PackageProjectUrl>https://github.com/goatcorp/OopsGuard</PackageProjectUrl>
+    <PackageLicenseExpression>AGPL-3.0-or-later</PackageLicenseExpression>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="..\Data\goat.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>false</Visible>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+		<Reference Include="Dalamud">
+			<HintPath>$(DalamudLibPath)Dalamud.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+
+		<Reference Include="FFXIVClientStructs">
+			<HintPath>$(DalamudLibPath)FFXIVClientStructs.dll</HintPath>
+			<Private>False</Private>
+
+		</Reference>
+
+		<Reference Include="Newtonsoft.Json">
+			<HintPath>$(DalamudLibPath)Newtonsoft.Json.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+
+		<Reference Include="ImGui.NET">
+			<HintPath>$(DalamudLibPath)ImGui.NET.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+
+		<Reference Include="ImGuiScene">
+			<HintPath>$(DalamudLibPath)ImGuiScene.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+
+		<Reference Include="Lumina">
+			<HintPath>$(DalamudLibPath)Lumina.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+
+		<Reference Include="Lumina.Excel">
+			<HintPath>$(DalamudLibPath)Lumina.Excel.dll</HintPath>
+			<Private>False</Private>
+		</Reference>
+
+		<Reference Include="InteropGenerator.Runtime">
+			<HintPath>$(DalamudLibPath)InteropGenerator.Runtime.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+	</ItemGroup>
+</Project>
