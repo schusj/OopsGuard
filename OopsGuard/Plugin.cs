@@ -16,5 +16,4 @@ public sealed class Plugin : IDalamudPlugin
     {
         actionDisabler.Dispose();
     }
-
 }
