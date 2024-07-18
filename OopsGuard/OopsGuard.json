@@ -2,7 +2,7 @@
   "Author": "schusj",
   "Name": "OopsGuard",
   "Punchline": "Never say oops again",
-  "Description": "Disables actions that aren't next in combo. Doesn't ruin your muscle memory!",
+  "Description": "Disables combo actions that aren't highlighted",
   "ApplicableVersion": "any",
   "Tags": [
     "combo",
